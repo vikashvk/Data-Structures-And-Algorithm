@@ -2,8 +2,16 @@ class BubbleSort{
     public static void main(String[] args) {
         int[] unsortedArray={ 19, 39,-20, 13, 43, 76, 67, 48, -22};
 
-        // for(int)
-        System.out.println(unsortedArray);
+        for (int unsortedIndex = 0; unsortedIndex < unsortedArray.length-1; unsortedIndex++) {
+            for (int j = 0; j < unsortedArray.length-unsortedIndex-1; j++) {
+               if(unsortedArray[j]>unsortedArray[j+1]){
+                   swap(unsortedArray, j, j+1);
+               } 
+            }
+        }
+
+        for(int i=0; i<unsortedArray.length; i++)
+        System.out.println(unsortedArray[i]);
     }
      public static void swap(int[] arr, int i, int j){
             if(i== j)
