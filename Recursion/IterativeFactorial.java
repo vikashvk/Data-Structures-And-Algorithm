@@ -1,8 +1,8 @@
 
 class IterativeFactorial{
     public static void main(String[] args) {
-        
-        System.out.println(factorial(5));
+        int n=5;
+        System.out.println("Factorial of "+n+" is "+ factorial(5));
 
     }
     public static int factorial(int num){
