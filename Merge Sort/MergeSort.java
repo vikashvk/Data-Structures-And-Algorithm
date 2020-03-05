@@ -22,6 +22,9 @@ class MergeSort{
         if(input[mid-1]<=input[mid])
         return;
         
+        input[mid-1]=input[mid-1]+input[mid];
+        input[mid]=input[mid-1]-input[mid];
+        input[mid-1]=input[mid-1]-input[mid];
 
     }
 }
