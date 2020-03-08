@@ -34,11 +34,5 @@ class MergeSort{
 
         System.arraycopy(input, i, input, start+tempIndex, mid-i);
         System.arraycopy(tempArray, 0, input, start, tempIndex);
-        // input[mid-1]=input[mid-1]+input[mid];
-        // input[mid]=input[mid-1]-input[mid];
-        // input[mid-1]=input[mid-1]-input[mid];
-        
-        // merge(input, i, mid, j);
-
     }
 }
