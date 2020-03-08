@@ -22,10 +22,10 @@ class MergeSort{
     // 19, 39,-20, 13, 43, 76, 67, 48, -22
     public static void merge(int[] input, int start, int mid, int end){
         if(input[mid-1]<=input[mid])
-        return;
+        return; 
         
         int i=start;
-        int j=end;
+        int j=mid;
         int tempIndex=0;
 
         int[] tempArray=new int[end-start];
