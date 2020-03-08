@@ -3,6 +3,11 @@ class BubbleSort{
         int[] unsortedArray={ 19, 39,-20, 13, 43, 76, 67, 48, -22};
 
         for (int unsortedIndex = 0; unsortedIndex < unsortedArray.length-1; unsortedIndex++) {
+            // for(int x=unsortedArray.length/2; x>0; x=2){
+            //     int largest=0;
+            //     if(unsortedArray[x]==unsortedArray[largest]){
+            //     }
+            // }
             for (int j = 0; j < unsortedArray.length-unsortedIndex-1; j++) {
                if(unsortedArray[j]>unsortedArray[j+1]){
                    swap(unsortedArray, j, j+1);
@@ -21,5 +26,4 @@ class BubbleSort{
             arr[j]= arr[i]-arr[j];
             arr[i]= arr[i]-arr[j];
         }
-    
 }
