@@ -7,7 +7,6 @@ class MergeSort{
         for(int i=0;i<unsortedArray.length;i++){
             System.out.println(unsortedArray[i]);
         }
-
     }
     // 19, 39,-20, 13, 43, 76, 67, 48, -22
     public static void mergeSort(int[] input, int start, int end) {
