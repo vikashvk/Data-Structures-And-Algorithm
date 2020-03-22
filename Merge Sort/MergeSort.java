@@ -3,7 +3,6 @@ class MergeSort{
         int[] unsortedArray={ 19, 39,-20, 13, 43, 76, 67, 48, -22};
         // int start=unsortedArray[0];
         // int end=unsortedArray[unsortedArray.length-1];
-        
         mergeSort(unsortedArray, 0, unsortedArray.length);
         for(int i=0;i<unsortedArray.length;i++){
             System.out.println(unsortedArray[i]);
