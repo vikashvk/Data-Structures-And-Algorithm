@@ -1,7 +1,6 @@
 class BubbleSort{
     public static void main(String[] args) {
         int[] unsortedArray={ 19, 39,-20, 13, 43, 76, 67, 48, -22};
-
         for (int unsortedIndex = 0; unsortedIndex < unsortedArray.length-1; unsortedIndex++) {
             // for(int x=unsortedArray.length/2; x>0; x=2){
             //     int largest=0;
