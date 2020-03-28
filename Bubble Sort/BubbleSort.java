@@ -13,7 +13,6 @@ class BubbleSort{
                } 
             }
         }
-
         for(int i=0; i<unsortedArray.length; i++)
         System.out.println(unsortedArray[i]);
     }
