@@ -23,7 +23,6 @@ class MergeSort{
     public static void merge(int[] input, int start, int mid, int end){
         if(input[mid-1]<=input[mid])
         return; 
-        
         int i=start;
         int j=mid;
         int tempIndex=0;
