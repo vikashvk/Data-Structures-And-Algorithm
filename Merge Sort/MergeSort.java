@@ -26,7 +26,6 @@ class MergeSort{
         int i=start;
         int j=mid;
         int tempIndex=0;
-
         int[] tempArray=new int[end-start];
         while(i<mid && j<end)
         tempArray[tempIndex++]=input[i]<=input[j]? input[i++] : input[j++];
