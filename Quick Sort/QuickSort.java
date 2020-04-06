@@ -26,7 +26,6 @@ public class QuickSort{
         while(i<j){
             // empty loop, to keep chnaging vakue of j
             while(i<j && input[--j]>=pivot);
-
             if(i<j){
                 input[i]=input[j];
             }
@@ -35,9 +34,9 @@ public class QuickSort{
             if(i<j){
                 input[j]=input[i];
             }
-            
                 
             }
+            //fixing pivot position
             input[j]=pivot;
             return j;
         }
