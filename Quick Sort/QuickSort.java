@@ -6,7 +6,15 @@ public class QuickSort{
         }
     }
         public static void quickSort(int[] input, int start, int end) {
-        if(start- end<2)
+        if(end- start<2)
         return;    
+
+        int pivotIndex=partition(input, start, end);
+        quickSort(input, start, pivotIndex);
+        quickSort(input, pivotIndex+1, end);
+    }
+
+    private static int partition(int[] input, int start, int end) {
+        return 0; 
     }
 }
