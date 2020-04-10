@@ -19,14 +19,14 @@ public class ChallengOne {
     }
     // 19, 39,-20, 13, 43, 76, 67, 48, -22
     public static void merge(int[] input, int start, int mid, int end){
-        if(input[mid-1]<=input[mid])
+        if(input[mid-1]>=input[mid])
         return; 
         int i=start;
         int j=mid;
         int tempIndex=0;
         int[] tempArray=new int[end-start];
         while(i<mid && j<end)
-        tempArray[tempIndex++]=input[i]<=input[j]? input[i++] : input[j++];
+        tempArray[tempIndex++]=input[i]>=input[j]? input[i++] : input[j++];
         System.arraycopy(input, i, input, start+tempIndex, mid-i);
         System.arraycopy(tempArray, 0, input, start, tempIndex);
     }
